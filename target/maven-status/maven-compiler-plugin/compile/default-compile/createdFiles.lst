@@ -1,0 +1,6 @@
+fileup\FileUploadController.class
+fileup\App.class
+fileup\storage\StorageServiceImpl.class
+fileup\storage\StorageService.class
+fileup\storage\StorageProperties.class
+META-INF\spring-configuration-metadata.json
