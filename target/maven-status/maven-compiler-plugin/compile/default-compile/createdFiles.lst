@@ -1,5 +1,5 @@
 fileup\FileUploadController.class
-fileup\App.class
+fileup\Application.class
 fileup\storage\StorageServiceImpl.class
 fileup\storage\StorageService.class
 fileup\storage\StorageProperties.class
