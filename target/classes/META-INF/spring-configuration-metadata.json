@@ -1,0 +1,15 @@
+{
+  "groups": [{
+    "name": "storage",
+    "type": "fileup.storage.StorageProperties",
+    "sourceType": "fileup.storage.StorageProperties"
+  }],
+  "properties": [{
+    "name": "storage.location",
+    "type": "java.lang.String",
+    "description": "Folder location for storing files",
+    "sourceType": "fileup.storage.StorageProperties",
+    "defaultValue": "upload-dir"
+  }],
+  "hints": []
+}
