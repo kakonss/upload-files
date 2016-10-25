@@ -25,7 +25,6 @@ public class FileUploadController {
 
 	    @GetMapping("/")
 	    public String listUploadedFiles(Model model) throws IOException {
-	    	System.out.println("her1ehere1");
 	        return "uploadForm";
 	    }
 	    

@@ -8,6 +8,4 @@ public interface StorageService {
 
     void store(MultipartFile file);
     
-    
-    void deleteAll();
 }

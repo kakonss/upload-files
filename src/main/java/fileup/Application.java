@@ -9,10 +9,7 @@ import org.springframework.context.annotation.Bean;
 import fileup.storage.StorageService;
 import fileup.storage.StorageProperties;
 
-/**
- * Hello world!
- *
- */
+
 @SpringBootApplication
 @EnableConfigurationProperties(StorageProperties.class)
 public class Application 
@@ -24,7 +21,6 @@ public class Application
 	@Bean
 	CommandLineRunner init(StorageService storageService) {
 		return (args) -> {
-            storageService.deleteAll();
             storageService.init();
 		};
 	}
