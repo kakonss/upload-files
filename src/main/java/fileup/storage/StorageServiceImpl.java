@@ -22,11 +22,11 @@ public class StorageServiceImpl implements StorageService {
     @Override
     public void store(MultipartFile file) {
         try {
-            if (file.isEmpty()) {
-                System.out.println("Failed to store empty file " + file.getOriginalFilename());
-            }
+        	
             Files.copy(file.getInputStream(), this.rootLocation.resolve(file.getOriginalFilename()));
+            
         } catch (IOException e) {
+        	
         	System.out.println (e.toString());
             System.out.println("Failed to store file " + file.getOriginalFilename());
         }
@@ -36,11 +36,14 @@ public class StorageServiceImpl implements StorageService {
     @Override
     public void init() {
         try {
+        	
         	File directory = new File(String.valueOf(rootLocation));
         	if (! directory.exists()){
         		Files.createDirectory(rootLocation);
         	}
+        	
         } catch (IOException e) {
+        	
         	System.out.println (e.toString());
             System.out.println("Could not initialize storage");
         }
